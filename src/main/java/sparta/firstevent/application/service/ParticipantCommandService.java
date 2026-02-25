@@ -24,7 +24,7 @@ public class ParticipantCommandService implements ParticipantManageUseCase {
     private final EventParticipantCountRepository eventParticipantCountRepository;
 
     private final Determinator determinator;
-    
+
     @Override
     public Participant apply(Long eventId, Long memberId) {
         validateApply(eventId, memberId);
